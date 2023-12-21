@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    margin-top: 7px;
+}
+
+.row input[type="text"]{
+    width: 264px;
+    padding: 7px;
+    position: relative;
+    left: -3px;
+    margin-bottom: 10px;
+}
+
+.footer-text{
+    text-align: center;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    height: 8vh;
+    margin-top: 215px;
+}
+
+.footer-text p{
+    position: relative;
+    top: 18px;
+}
+
+.heart-icon{
+    color: red;
+}

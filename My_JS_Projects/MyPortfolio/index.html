@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Welcome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left">
+                <a href="#" style="font-weight: bold;">Arijit's Portfolio</a>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first-section">
+            <div class="left-section">
+                Hi, My name is <span id="name">Arijit</span> and I am a
+                <span id="element"></span>
+                <div class="button-container">
+                    <div class="download-resume">
+                        <a href="./Arijit_Bhakta_CV.pdf" target="_blank">Download resume</a>
+                    </div>
+                    <div class="visit-github">
+                        <a href="https://github.com/arijit157" target="_blank">Visit GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <img src="./developer2.png" alt="developer2_img">
+            </div>
+        </section>
+        <hr class="hr-line">
+        <section class="second-section">
+            <p class="gray">What I have done so far</p>
+            <h3>Work Experience</h3>
+            <div class="box" style="margin-top: 70px;">
+                <div class="vertical">
+                    <img src="./html_tag_logo.png" alt="html_tag_logo_img" class="vertical-img">
+                    <div class="vertical-title">
+                        <p>HTML <br>Developer(2010-2012)</p>
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione exercitationem excepturi modi,
+                        consequuntur explicabo delectus.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="./html_tag_logo.png" alt="html_tag_logo_img" class="vertical-img">
+                    <div class="vertical-title">
+                        <p>JavaScript <br>Developer(2012-2015)</p>
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione exercitationem excepturi modi,
+                        consequuntur explicabo delectus.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="./html_tag_logo.png" alt="html_tag_logo_img" class="vertical-img">
+                    <div class="vertical-title">
+                        <p>C Developer <br>(2015-2017)</p>
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione exercitationem excepturi modi,
+                        consequuntur explicabo delectus.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="./html_tag_logo.png" alt="html_tag_logo_img" class="vertical-img">
+                    <div class="vertical-title">
+                        <p>Java Developer <br>(2017-Present)</p>
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione exercitationem excepturi modi,
+                        consequuntur explicabo delectus.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-text">
+                Made with <span id="heart-icon">♥</span> by Arijit
+            </div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['full stack Java developer', 'Web designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

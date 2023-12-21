@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Tutorial</title>
+</head>
+
+<body>
+    <p id="mypara1">first paragraph</p>
+    <p class="mypara2">second paragraph</p>
+    <p class="mypara2">third paragraph</p>
+    <button onclick="redirectFunc()">Click me</button>
+    <br/>
+    <button onclick="printFunc()">Print</button>
+    <br/>
+    <div id="one">
+        <p>This is divone</p>
+        <button onclick="myFunc('one')">divone</button>
+    </div>
+    <div id="two">
+        <p>This is divtwo</p>
+        <button onclick="myFunc('two')">divtwo</button>
+    </div>
+    <div id="three">
+        <p>This is divthree</p>
+        <button onclick="myFunc('three')">divthree</button>
+    </div>
+
+    <script>
+        let a = document.getElementById("mypara1").innerHTML;
+        console.log(a);
+
+        let b = document.getElementsByClassName("mypara2");
+        console.log(b);
+        console.log(b[1].innerHTML);
+
+        let c = document.getElementsByTagName("p");
+        console.log(c);
+        console.log(c[1].innerHTML);
+
+        let d = document.querySelector("p");
+        console.log(d);
+
+        let child = document.body.children;
+        console.log(child);
+
+        let element = document.createElement("p");
+        let content = document.createTextNode("Hello guys!");
+        element.appendChild(content);
+        console.log(element);
+        document.body.appendChild(element);
+
+        console.log(document.childNodes);  //returns the child nodes of an element
+
+        console.log(document.body.childNodes);
+
+        console.log(document.body.parentNode);
+
+        console.log(document.body.firstChild);
+
+        console.log(document.body.lastChild);
+
+        console.log(document.childNodes[1].firstChild);   //<html></html>
+
+        let firstSibling = mypara1.nextElementSibling;  //to find the first sibling of a node
+        console.log(firstSibling);
+
+        let secondSibling = mypara1.nextElementSibling.nextElementSibling;   //to find the second sibling of a node
+        console.log(secondSibling);
+
+        //document.getElementById("mypara1").style.color="blue";
+        document.getElementById("mypara1").setAttribute("style", "background-color: blue; color: white; text-align: center; font-size: 20px");
+
+        function redirectFunc(){
+            //window.open("https://youtube.com");   //open or redirect the user to the specified website
+
+            //window.location="https://youtube.com";   //does same as above
+
+            window.location.assign("https://youtube.com");   //does same as above
+        }
+
+        const printFunc=()=>{
+            // setTimeout(()=>{
+            //     window.print();
+            // }, 3000);
+
+            //window.print();  //prints the whole page 
+        }
+
+        const myFunc=(id)=>{
+            let backup=document.body.innerHTML;
+            let portion=document.getElementById(id).innerHTML;
+            document.body.innerHTML=portion;
+            window.print();
+            document.body.innerHTML=backup;
+        }
+    </script>
+</body>
+
+</html>

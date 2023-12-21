@@ -1,0 +1,17 @@
+.footer{
+    border: 2px solid black;
+    background-color: black;
+}
+
+.footer-content p{
+    color: white;
+    margin-top: 7px;
+}
+
+.footer{
+    margin-top: 20px;
+}
+
+#heart-icon{
+    color: red;
+}
